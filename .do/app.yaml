@@ -1,0 +1,9 @@
+name: linuxprivchecker
+workers:
+- name: runner
+  github:
+    repo: snormore/linuxprivchecker
+    branch: master
+    deploy_on_push: true
+  dockerfile_path: Dockerfile
+  run_command: sleep infinity
